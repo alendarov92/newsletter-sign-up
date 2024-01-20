@@ -39,8 +39,8 @@ function App() {
 
         }
     })
-     
-     
+
+
     return (
         <>
 
@@ -86,12 +86,12 @@ function App() {
                                 onClick={formik.handleSubmit}
                                 type='submit'
                                 className='w-full hover:shadow-2xl hover:shadow-slate-500 p-4 bg-btn  mt-4 rounded-md 
-             hover:bg-gradient-to-r hover:from-pink-600 hover:to-orange-400 text-white'>Subscribe to monthly newsletter</button>
+                                        hover:bg-gradient-to-r hover:from-pink-600 hover:to-orange-400 text-white'>Subscribe to monthly newsletter</button>
                         </form>
                     </div>
                 </section >
             </div>}
-            {success && <Success user={formik.values.email} setSuccess={setSuccess}/>}
+            {success && <Success user={formik.values.email} setSuccess={setSuccess} />}
         </>
     );
 }
